@@ -1,3 +1,10 @@
+fun main() {
+    val names = arrayOf("Sewmini", "Amasha", "Bulan", "Sugeeshwara", "Didula")
+
+    for (i in names.indices) {
+        println("Name[$i]: ${names[i]}")
+    }
+}
 abstract class Employee(val name: String, val id: Int) {
     abstract fun calculateSalary(): Double
     abstract fun displayInfo()
@@ -24,8 +31,8 @@ class PermanentStaff(name: String, id: Int, val monthlySalary: Double, val bonus
 }
 
 fun main() {
-    val temp = TemporaryStaff("Nimal", 101, 120, 500.0)
-    val perm = PermanentStaff("Kamal", 102, 60000.0, 10000.0)
+    val temp = TemporaryStaff("Didula", 101, 120, 500.0)
+    val perm = PermanentStaff("Bulan", 102, 60000.0, 10000.0)
 
     temp.displayInfo()
     perm.displayInfo()
